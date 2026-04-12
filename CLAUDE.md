@@ -14,8 +14,9 @@ A static newsletter site for **KSSP Yuvasamithi** (Kerala Shastra Sahitya Parish
 
 - **Hosting only.** Everything lives under `public/`; `firebase deploy` pushes it. No build step, no framework.
 - **Per-issue isolation.** Each newsletter goes in `public/issues/YYYY-month/` with its own `index.html` and `photos/` subfolder. HTML uses **relative** image paths (`photos/cover.png`) so an issue folder is portable and standalone — do not rewrite these to absolute paths.
-- **Landing page (`public/index.html`)** and **`archive.html`** are hand-edited each month to add the new issue; there is no templating. The monthly deploy checklist (spec §6.3) is the source of truth for what to update.
-- **`/latest` rewrite** in `firebase.json` points at the current issue and must be updated on every release alongside the landing page.
+- **Landing page and archive are data-driven.** `public/index.html` and `public/archive.html` are template shells; both fetch `public/issues.json` at runtime and render cards from it via `public/js/render.js`. To add or edit an issue, **update `issues.json`** — do NOT hand-edit card markup in the HTML files. Each HTML file ships a `<noscript>` fallback card for the newest issue so the page still works if JS fails.
+- The `cover` field in `issues.json` is **relative to the issue folder** (`/issues/{slug}/`), so the same value works for both the landing-page thumbnail and any future issue-page reference.
+- **No `/latest` rewrite.** The landing page is always the newest entry in the manifest, so there's nothing to repoint per release.
 - **Caching headers** in `firebase.json` are tiered intentionally: HTML 1h, PDF 1d, photos 1w. Preserve this when editing config.
 - **Forward compatibility.** Folder layout (`/issues/YYYY-month/`) is chosen so a future migration to Astro/Next.js keeps existing URLs working. Don't introduce URL schemes that would break this.
 

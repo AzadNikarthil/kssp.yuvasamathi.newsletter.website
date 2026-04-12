@@ -27,8 +27,8 @@
     </a>
     <nav class="site-nav-links" aria-label="Primary">
       <a href="/">ഹോം</a>
-      <a href="/archive" aria-current="page">ആർക്കൈവ്</a>
-      <a href="/about">കുറിച്ച്</a>
+      <a href="/archive/" aria-current="page">ആർക്കൈവ്</a>
+      <a href="/about/">കുറിച്ച്</a>
     </nav>
   </div>
 </header>
@@ -39,18 +39,17 @@
     <h1>എല്ലാ ലക്കങ്ങളും <span class="en" lang="en">All issues</span></h1>
   </div>
 
-  <div class="issue-grid">
+  <div class="issue-grid" id="archive-grid-slot">
+    <!-- Fallback card (no-JS, or manifest fetch failure). -->
     <article class="issue-card">
       <a class="issue-card-cover" href="/issues/2026-march/">
-        <img src="/issues/2026-march/photos/March/equalty%20march.jpg" alt="സമത്വത്തിന്റെ വഴികൾ — Equality March cover">
+        <img src="/issues/2026-march/photos/March/equalty%20march.jpg" alt="സമത്വത്തിന്റെ വഴികൾ — Pathways of Equality">
       </a>
       <div class="issue-card-body">
         <span class="issue-chip" lang="en">Issue 01 · March–April 2026</span>
         <h2>സമത്വത്തിന്റെ വഴികൾ</h2>
         <p class="display-en" lang="en">Pathways of Equality — Voices of Youth</p>
-        <p>
-          തുല്യതാമാർച്ച്, വയനാട്, മൈക്രോപ്ലാസ്റ്റിക്, ജനറേറ്റീവ് AI-യും കാലാവസ്ഥയും, ആർട്ടിമിസ് 2.
-        </p>
+        <p>തുല്യതാമാർച്ച്, വയനാട്, മൈക്രോപ്ലാസ്റ്റിക്, ജനറേറ്റീവ് AI-യും കാലാവസ്ഥയും, ആർട്ടിമിസ് 2.</p>
         <div class="issue-card-actions">
           <a class="btn btn-inverse" href="/issues/2026-march/">Read</a>
           <a class="btn btn-primary" href="/pdfs/2026-march.pdf" download>PDF</a>
@@ -71,8 +70,8 @@
     <div class="site-footer-links">
       <h4>Newsletter</h4>
       <a href="/issues/2026-march/">Latest issue</a>
-      <a href="/archive">Archive</a>
-      <a href="/about">About us</a>
+      <a href="/archive/">Archive</a>
+      <a href="/about/">About us</a>
     </div>
     <div class="site-footer-links">
       <h4>Contact</h4>
@@ -80,6 +79,31 @@
     </div>
   </div>
 </footer>
+
+<template id="archive-card-template">
+  <article class="issue-card">
+    <a class="issue-card-cover" data-attr="href:issue_url">
+      <img data-attr="src:cover_url" data-alt alt="">
+    </a>
+    <div class="issue-card-body">
+      <span class="issue-chip" lang="en" data-field="eyebrow"></span>
+      <h2 data-field="title_ml"></h2>
+      <p class="display-en" lang="en" data-field="title_en"></p>
+      <p data-field="summary_ml"></p>
+      <div class="issue-card-actions">
+        <a class="btn btn-inverse" data-attr="href:issue_url">Read</a>
+        <a class="btn btn-primary" data-attr="href:pdf_url" download>PDF</a>
+      </div>
+    </div>
+  </article>
+</template>
+
+<script src="/js/render.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    window.KSSPIssues.boot({ all: true });
+  });
+</script>
 
 </body>
 </html>

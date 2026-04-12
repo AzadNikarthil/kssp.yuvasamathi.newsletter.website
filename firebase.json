@@ -7,7 +7,7 @@
       "**/node_modules/**"
     ],
     "cleanUrls": true,
-    "trailingSlash": false,
+    "trailingSlash": true,
     "headers": [
       {
         "source": "**/*.html",
@@ -35,8 +35,6 @@
         ]
       }
     ],
-    "rewrites": [
-      { "source": "/latest", "destination": "/issues/2026-march/index.html" }
-    ]
+    "rewrites": []
   }
 }

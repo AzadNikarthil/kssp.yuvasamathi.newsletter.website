@@ -27,23 +27,23 @@
     </a>
     <nav class="site-nav-links" aria-label="Primary">
       <a href="/" aria-current="page">ഹോം</a>
-      <a href="/archive">ആർക്കൈവ്</a>
-      <a href="/about">കുറിച്ച്</a>
+      <a href="/archive/">ആർക്കൈവ്</a>
+      <a href="/about/">കുറിച്ച്</a>
     </nav>
   </div>
 </header>
 
-<section class="masthead">
+<section class="masthead" id="hero-slot">
   <div class="masthead-inner">
-    <span class="eyebrow" lang="en">Vol. 01 · March–April 2026 · Issue No. 001</span>
-    <h1>സമത്വത്തിന്റെ വഴികൾ</h1>
-    <p class="display-en" lang="en">Pathways of Equality — Voices of Youth</p>
-    <p class="lede">
-      ശാസ്ത്രവും സാമൂഹ്യനീതിയും ഒരുമിക്കുന്ന യുവതയുടെ ശബ്ദം. ഈ ലക്കത്തിൽ: തുല്യതാമാർച്ച്, പരിസ്ഥിതി, ആരോഗ്യം, ശാസ്ത്രവാർത്തകൾ, ആർട്ടിമിസ് 2 ദൗത്യം.
+    <span class="eyebrow" lang="en" data-field="eyebrow">Vol. 01 · March–April 2026 · Issue No. 01</span>
+    <h1 data-field="title_ml">സമത്വത്തിന്റെ വഴികൾ</h1>
+    <p class="display-en" lang="en" data-field="title_en">Pathways of Equality — Voices of Youth</p>
+    <p class="lede" data-field="summary_ml">
+      തുല്യതാമാർച്ച്, വയനാട്, മൈക്രോപ്ലാസ്റ്റിക്, ജനറേറ്റീവ് AI-യും കാലാവസ്ഥയും, ആർട്ടിമിസ് 2 — മാസത്തിലെ പ്രധാന വിഷയങ്ങൾ.
     </p>
     <div class="masthead-cta">
-      <a class="btn btn-primary" href="/issues/2026-march/">ലക്കം വായിക്കുക · Read the issue</a>
-      <a class="btn btn-ghost" href="/pdfs/2026-march.pdf" download>Download PDF</a>
+      <a class="btn btn-primary" data-attr="href:issue_url" href="/issues/2026-march/">ലക്കം വായിക്കുക · Read the issue</a>
+      <a class="btn btn-ghost" data-attr="href:pdf_url" href="/pdfs/2026-march.pdf" download>Download PDF</a>
     </div>
   </div>
 </section>
@@ -53,18 +53,17 @@
     <span class="eyebrow" lang="en">Latest Issue</span>
     <h2>ഏറ്റവും പുതിയ ലക്കം <span class="en" lang="en">In this issue</span></h2>
   </div>
-  <div class="issue-grid">
+  <div class="issue-grid" id="latest-card-slot">
+    <!-- Fallback card (no-JS, or manifest fetch failure). Rendered with the same markup as the template below. -->
     <article class="issue-card">
       <a class="issue-card-cover" href="/issues/2026-march/">
-        <img src="/issues/2026-march/photos/March/equalty%20march.jpg" alt="സമത്വത്തിന്റെ വഴികൾ — Equality March cover">
+        <img src="/issues/2026-march/photos/March/equalty%20march.jpg" alt="സമത്വത്തിന്റെ വഴികൾ — Pathways of Equality">
       </a>
       <div class="issue-card-body">
         <span class="issue-chip" lang="en">Issue 01 · March–April 2026</span>
         <h3>സമത്വത്തിന്റെ വഴികൾ</h3>
         <p class="display-en" lang="en">Pathways of Equality — Voices of Youth</p>
-        <p>
-          തുല്യതാമാർച്ച്, വയനാട്, മൈക്രോപ്ലാസ്റ്റിക്, ജനറേറ്റീവ് AI-യും കാലാവസ്ഥയും, ആർട്ടിമിസ് 2 — മാസത്തിലെ പ്രധാന വിഷയങ്ങൾ.
-        </p>
+        <p>തുല്യതാമാർച്ച്, വയനാട്, മൈക്രോപ്ലാസ്റ്റിക്, ജനറേറ്റീവ് AI-യും കാലാവസ്ഥയും, ആർട്ടിമിസ് 2.</p>
         <div class="issue-card-actions">
           <a class="btn btn-inverse" href="/issues/2026-march/">Read</a>
           <a class="btn btn-primary" href="/pdfs/2026-march.pdf" download>PDF</a>
@@ -74,23 +73,14 @@
   </div>
 </section>
 
-<section class="section tint">
+<section class="section tint" id="recent-section" hidden>
   <div class="section-head">
     <span class="eyebrow" lang="en">Archive</span>
     <h2>മുൻ ലക്കങ്ങൾ <span class="en" lang="en">Past issues</span></h2>
   </div>
-  <div class="issue-grid">
-    <article class="issue-card placeholder" aria-hidden="true">
-      <div class="issue-card-cover"></div>
-      <div class="issue-card-body">
-        <span class="issue-chip" lang="en">Coming soon</span>
-        <h3>അടുത്ത ലക്കം തയ്യാറാകുന്നു</h3>
-        <p class="display-en" lang="en">Next issue in production</p>
-      </div>
-    </article>
-  </div>
+  <div class="issue-grid" id="recent-grid-slot"></div>
   <p style="text-align:left; margin-top:48px; max-width:var(--max-width); padding:0 32px; margin-left:auto; margin-right:auto;">
-    <a class="btn-text" href="/archive">എല്ലാ ലക്കങ്ങളും കാണുക · View all issues →</a>
+    <a class="btn-text" href="/archive/">എല്ലാ ലക്കങ്ങളും കാണുക · View all issues →</a>
   </p>
 </section>
 
@@ -105,8 +95,8 @@
     <div class="site-footer-links">
       <h4>Newsletter</h4>
       <a href="/issues/2026-march/">Latest issue</a>
-      <a href="/archive">Archive</a>
-      <a href="/about">About us</a>
+      <a href="/archive/">Archive</a>
+      <a href="/about/">About us</a>
     </div>
     <div class="site-footer-links">
       <h4>Contact</h4>
@@ -114,6 +104,56 @@
     </div>
   </div>
 </footer>
+
+<!-- Card templates consumed by /js/render.js — driven from /issues.json -->
+<template id="latest-card-template">
+  <article class="issue-card">
+    <a class="issue-card-cover" data-attr="href:issue_url">
+      <img data-attr="src:cover_url" data-alt alt="">
+    </a>
+    <div class="issue-card-body">
+      <span class="issue-chip" lang="en" data-field="eyebrow"></span>
+      <h3 data-field="title_ml"></h3>
+      <p class="display-en" lang="en" data-field="title_en"></p>
+      <p data-field="summary_ml"></p>
+      <div class="issue-card-actions">
+        <a class="btn btn-inverse" data-attr="href:issue_url">Read</a>
+        <a class="btn btn-primary" data-attr="href:pdf_url" download>PDF</a>
+      </div>
+    </div>
+  </article>
+</template>
+
+<template id="recent-card-template">
+  <article class="issue-card">
+    <a class="issue-card-cover" data-attr="href:issue_url">
+      <img data-attr="src:cover_url" data-alt alt="">
+    </a>
+    <div class="issue-card-body">
+      <span class="issue-chip" lang="en" data-field="eyebrow"></span>
+      <h3 data-field="title_ml"></h3>
+      <p class="display-en" lang="en" data-field="title_en"></p>
+      <div class="issue-card-actions">
+        <a class="btn btn-inverse" data-attr="href:issue_url">Read</a>
+        <a class="btn btn-primary" data-attr="href:pdf_url" download>PDF</a>
+      </div>
+    </div>
+  </article>
+</template>
+
+<script src="/js/render.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    window.KSSPIssues.boot({
+      hero: true,
+      latest: true,
+      recent: true,
+      afterLoad: function (issues) {
+        if (issues.length > 1) document.getElementById('recent-section').hidden = false;
+      }
+    });
+  });
+</script>
 
 </body>
 </html>

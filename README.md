@@ -67,29 +67,36 @@ firebase hosting:channel:deploy review
 
 ## Adding a new issue (monthly workflow)
 
-Condensed from the spec's §6.3 checklist:
+The landing page and archive are **data-driven** — both read from `public/issues.json`. You never edit the HTML of `index.html` or `archive.html` to add an issue. Five steps:
 
-1. Draft the newsletter in `newsletter_march/` (or a sibling authoring folder). Follow `newsletter_march/PROCESS.md`.
-2. Generate the PDF via Chrome headless:
+1. **Author** the newsletter HTML + photos in `newsletter_march/` (or a sibling authoring folder) following `newsletter_march/PROCESS.md`, and generate the PDF via Chrome headless.
+2. **Drop files** into `public/`:
    ```bash
-   google-chrome --headless --no-sandbox \
-     --print-to-pdf=newsletter_<issue>.pdf \
-     --print-to-pdf-no-header \
-     "file://$PWD/newsletter_<issue>.html"
+   SLUG=2026-april    # change per issue
+   mkdir -p public/issues/$SLUG
+   cp newsletter_<issue>.html public/issues/$SLUG/index.html
+   cp -r photos               public/issues/$SLUG/photos
+   cp newsletter_<issue>.pdf  public/pdfs/$SLUG.pdf
    ```
-3. Copy artefacts into `public/`:
-   ```bash
-   mkdir -p public/issues/YYYY-month
-   cp newsletter_<issue>.html public/issues/YYYY-month/index.html
-   cp -r photos                public/issues/YYYY-month/photos
-   cp newsletter_<issue>.pdf   public/pdfs/YYYY-month.pdf
+3. **Inject site chrome** into the new `public/issues/$SLUG/index.html`: nav bar, Open Graph meta tags, share bar, back link. Use `public/issues/2026-march/index.html` as a template — copy the injected `<style>` block, `<header class="issue-site-nav">`, `<div class="issue-share-bar">`, and `.issue-back-link`. Update the OG `og:image` and `og:url` to match the new issue.
+4. **Prepend one entry** to `public/issues.json` (new issue becomes `issues[0]`):
+   ```json
+   {
+     "slug": "2026-april",
+     "date": "2026-04",
+     "label": "April 2026",
+     "issue_no": "02",
+     "title_ml": "...",
+     "title_en": "...",
+     "summary_ml": "...",
+     "cover": "photos/April/cover.jpg",
+     "pdf": "/pdfs/2026-april.pdf"
+   }
    ```
-4. Inject site chrome into the new `index.html`: nav bar, Open Graph meta tags, share bar, back link. Use `public/issues/2026-march/index.html` as a template.
-5. Update `public/index.html` — hero, latest-issue card.
-6. Update `public/archive.html` — prepend a new card.
-7. Update `public/sitemap.xml` — add the new issue URL.
-8. Update `firebase.json` — repoint `/latest` rewrite at the new issue.
-9. `firebase deploy --only hosting` → verify on live site → share the link.
+   The `cover` field is **relative to the issue folder** — pick any image inside `public/issues/$SLUG/`.
+5. **Optional but nice**: append the new URL to `public/sitemap.xml`. Then `firebase deploy --only hosting` → verify → share.
+
+**Do not edit** the card markup in `public/index.html` or `public/archive.html`. They read from the manifest; any hand-edits drift and confuse future-you.
 
 ## Image budget
 
