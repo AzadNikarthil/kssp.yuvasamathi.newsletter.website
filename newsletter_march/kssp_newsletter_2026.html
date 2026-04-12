@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="ml" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KSSP യുവസമിതി ന്യൂസ്‌ലെറ്റർ – മാർച്ച്–ഏപ്രിൽ 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@300;400;600;700&family=Noto+Sans+Malayalam:wght@300;400;500;600&family=Playfair+Display:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --deep-red: #C1121F;
+    --rich-orange: #E85D04;
+    --warm-amber: #F48C06;
+    --cream: #FFF8F0;
+    --off-white: #FAFAF7;
+    --charcoal: #1A1A1A;
+    --dark-gray: #2D2D2D;
+    --mid-gray: #666666;
+    --light-gray: #E8E8E2;
+    --accent-green: #2D6A4F;
+    --accent-teal: #1B4F72;
+    --border: #D4C5B0;
+    --tag-bg: #FEF3C7;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans Malayalam', sans-serif;
+    background: var(--off-white);
+    color: var(--charcoal);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* ─── COVER PAGE ─── */
+  .cover {
+    background: var(--charcoal);
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    page-break-after: always;
+  }
+
+  .cover-noise {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .cover-top-stripe {
+    background: var(--deep-red);
+    height: 6px;
+    width: 100%;
+  }
+
+  .cover-header {
+    padding: 32px 48px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cover-org {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    line-height: 1.8;
+  }
+
+  .cover-issue {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.4);
+    text-align: right;
+  }
+
+  .cover-divider {
+    margin: 28px 48px 0;
+    height: 1px;
+    background: linear-gradient(90deg, var(--deep-red) 0%, rgba(255,255,255,0.1) 100%);
+    position: relative;
+    z-index: 2;
+  }
+
+  .cover-hero {
+    flex: 1;
+    padding: 48px 48px 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cover-campaign-tag {
+    display: inline-block;
+    background: var(--deep-red);
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 3px;
+    padding: 6px 16px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .cover-title-ml {
+    font-family: 'Noto Serif Malayalam', serif;
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+  }
+
+  .cover-title-en {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--warm-amber);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin-bottom: 48px;
+  }
+
+  .cover-visual-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin-bottom: 0;
+  }
+
+  .cover-cell {
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover-cell:nth-child(1) { background: var(--deep-red); }
+  .cover-cell:nth-child(2) { background: var(--accent-teal); }
+  .cover-cell:nth-child(3) { background: #1A1A1A; border: 1px solid rgba(255,255,255,0.08); }
+  .cover-cell:nth-child(4) { background: var(--accent-green); }
+
+  .cover-cell-label {
+    font-family: 'Noto Sans Malayalam', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.4;
+  }
+
+  .cover-cell-num {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-family: 'Space Mono', monospace;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.1);
+  }
+
+  .cover-bottom {
+    padding: 28px 48px 36px;
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cover-dates {
+    display: flex;
+    gap: 32px;
+  }
+
+  .cover-date-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .cover-date-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 8px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .cover-date-val {
+    font-family: 'Noto Serif Malayalam', serif;
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+  }
+
+  .cover-vol {
+    font-family: 'Space Mono', monospace;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.04);
+    letter-spacing: -2px;
+    user-select: none;
+  }
+
+  /* ─── CONTENTS PAGE ─── */
+  .contents-page {
+    background: var(--cream);
+    padding: 56px 48px;
+    min-height: 60vh;
+    page-break-after: always;
+  }
+
+  .section-eyebrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--deep-red);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .section-eyebrow::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .contents-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--charcoal);
+    margin-bottom: 48px;
+    line-height: 1.1;
+  }
+
+  .toc-list {
+    list-style: none;
+    display: grid;
+    gap: 0;
+  }
+
+  .toc-item {
+    display: grid;
+    grid-template-columns: 36px 1fr auto;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+  }
+
+  .toc-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--deep-red);
+    font-weight: 700;
+  }
+
+  .toc-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .toc-cat {
+    font-family: 'Space Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--mid-gray);
+  }
+
+  .toc-name {
+    font-family: 'Noto Serif Malayalam', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--charcoal);
+  }
+
+  .toc-tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    padding: 4px 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+
+  .tag-gender { background: #FDEEF0; color: var(--deep-red); }
+  .tag-env { background: #E8F5E9; color: var(--accent-green); }
+  .tag-health { background: #E3F2FD; color: #1565C0; }
+  .tag-science { background: #FFF3E0; color: #E65100; }
+  .tag-campaign { background: #F3E5F5; color: #6A1B9A; }
+  .tag-space { background: #E8EAF6; color: #283593; }
+
+  /* ─── EDITORIAL BANNER ─── */
+  .editorial-banner {
+    background: var(--charcoal);
+    color: white;
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .editorial-banner::before {
+    content: '"';
+    font-family: 'Playfair Display', serif;
+    font-size: 240px;
+    color: rgba(255,255,255,0.03);
+    position: absolute;
+    top: -40px;
+    right: 40px;
+    line-height: 1;
+  }
+
+  .editorial-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: var(--warm-amber);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .editorial-label::before {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: var(--warm-amber);
+  }
+
+  .editorial-text {
+    font-family: 'Noto Serif Malayalam', serif;
+    font-size: 17px;
+    line-height: 2;
+    color: rgba(255,255,255,0.85);
+    max-width: 680px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ─── ARTICLE PAGES ─── */
+  .article-spread {
+    padding: 0 0 60px;
+    page-break-after: always;
+  }
+
+  .article-header {
+    padding: 48px 48px 0;
+    margin-bottom: 32px;
+  }
+
+  .article-category-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .article-category-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .cat-gender { background: var(--deep-red); color: white; }
+  .cat-env { background: var(--accent-green); color: white; }
+  .cat-health { background: var(--accent-teal); color: white; }
+  .cat-science { background: var(--rich-orange); color: white; }
+  .cat-campaign { background: #6A1B9A; color: white; }
+
+  .article-category-name {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--mid-gray);
+  }
+
+  .article-title {
+    font-family: 'Noto Serif Malayalam', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--charcoal);
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+
+  .article-subtitle {
+    font-family: 'Noto Sans Malayalam', sans-serif;
+    font-size: 14px;
+    color: var(--mid-gray);
+    line-height: 1.7;
+    font-style: italic;
+    border-left: 3px solid var(--deep-red);
+    padding-left: 14px;
+  }
+
+  .article-body {
+    padding: 0 48px;
+    columns: 2;
+    column-gap: 40px;
+  }
+
+  .article-body p {
+    font-family: 'Noto Sans Malayalam', sans-serif;
+    font-size: 14.5px;
+    line-height: 2;
+    color: var(--dark-gray);
+    margin-bottom: 16px;
+    text-align: justify;
+    hyphens: auto;
+    break-inside: avoid;
+  }
+
+  .article-body .drop-cap::first-letter {
+    font-family: 'Noto Serif Malayalam', serif;
+    font-size: 52px;
+    font-weight: 700;
+    float: left;
+    line-height: 0.9;
+    margin: 8px 10px -4px 0;
+    color: var(--deep-red);
+  }
+
+  .article-full {
+    padding: 0 48px;
+    columns: 1;
+  }
+
+  .article-full p {
+    font-family: 'Noto Sans Malayalam', sans-serif;
+    font-size: 14.5px;
+    line-height: 2;
+    color: var(--dark-gray);
+    margin-bottom: 16px;
+    text-align: justify;
+  }
+
+  .pullquote {
+    margin: 32px 0;
+    padding: 28px 32px;
+    border-left: 4px solid var(--deep-red);
+    background: #FFF5F5;
+    break-inside: avoid;
+    column-span: all;
+  }
+
+  .pullquote p {
+    font-family: 'Noto Serif Malayalam', serif !important;
+    font-size: 18px !important;
+    font-style: italic;
+    color: var(--deep-red) !important;
+    line-height: 1.8 !important;
+    margin: 0 !important;
+  }
+
+  .source-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--light-gray);
+    padding: 6px 12px;
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: var(--mid-gray);
+    margin-bottom: 20px;
+    column-span: all;
+  }
+
+  /* ─── ARTICLE DIVIDER ─── */
+  .article-divider {
+    margin: 40px 48px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .article-divider::before,
+  .article-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .article-divider-text {
+    font-family: 'Space Mono', monospace;
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: var(--border);
+    text-transform: uppercase;
+  }
+
+  /* ─── SCIENCE NEWS CARD ─── */
+  .science-card {
+    margin: 0 48px 32px;
+    border: 1px solid var(--border);
+    padding: 28px;
+    break-inside: avoid;
+  }
+
+  .science-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+
+  .science-card-title {
+    font-family: 'Noto Serif Malayalam', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--charcoal);
+    line-height: 1.45;
+    flex: 1;
+    padding-right: 16px;
+  }
+
+  .science-card-date {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: var(--mid-gray);
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+
+  .science-card-body {
+    font-family: 'Noto Sans Malayalam', sans-serif;
+    font-size: 13.5px;
+    line-height: 1.9;
+    color: var(--dark-gray);
+    margin-bottom: 14px;
+  }
+
+  .doi-link {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: var(--accent-teal);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .doi-link::before {
+    content: '↗';
+    font-size: 11px;
+  }
+
+  /* ─── TIPS BOX ─── */
+  .tips-box {
+    margin: 0 48px 32px;
+    background: var(--accent-teal);
+    color: white;
+    padding: 28px 32px;
+  }
+
+  .tips-title {
+    font-family: 'Noto Serif Malayalam', serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  .tips-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+  }
+
+  .tips-list li {
+    font-family: 'Noto Sans Malayalam', sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    padding-left: 24px;
+    position: relative;
+    color: rgba(255,255,255,0.9);
+  }
+
+  .tips-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--warm-amber);
+    font-weight: bold;
+  }
+
+  /* ─── ANTI-WAR SECTION ─── */
+  .antiwar-block {
+    background: #0A0A0A;
+    color: white;
+    padding: 56px 48px;
+    position: relative;
+    overflow: hidden;
+    page-break-before: always;
+  }
+
+  .antiwar-block::after {
+    content: 'PEACE';
+    font-family: 'Playfair Display', serif;
+    font-size: 160px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.025);
+    position: absolute;
+    bottom: -20px;
+    right: -10px;
+    letter-spacing: -8px;
+    user-select: none;
+  }
+
+  .antiwar-eyebrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #FF4444;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .antiwar-eyebrow::before {
+    content: '';
+    width: 32px;
+    height: 2px;
+    background: #FF4444;
+  }
+
+  .antiwar-title {
+    font-family: 'Noto Serif Malayalam', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 28px;
+    line-height: 1.3;
+    position: relative;
+    z-index: 1;
+  }
+
+  .antiwar-body {
+    font-family: 'Noto Sans Malayalam', sans-serif;
+    font-size: 14.5px;
+    line-height: 2;
+    color: rgba(255,255,255,0.75);
+    max-width: 680px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .antiwar-body p {
+    margin-bottom: 16px;
+  }
+
+  /* ─── BACK COVER ─── */
+  .back-cover {
+    background: var(--charcoal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    page-break-before: always;
+  }
+
+  .back-cover-top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 48px 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .back-cover-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .back-cover-circle::before {
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .back-cover-initials {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 2px;
+  }
+
+  .back-cover-tagline {
+    font-family: 'Noto Serif Malayalam', serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+
+  .back-cover-sub {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.3);
+    text-transform: uppercase;
+    margin-bottom: 48px;
+  }
+
+  .back-cover-april-days {
+    margin: 0 48px;
+    padding: 32px 0;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .april-days-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: var(--warm-amber);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .april-days-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+  }
+
+  .april-day-card {
+    padding: 16px 12px;
+    text-align: center;
+  }
+
+  .april-day-card:nth-child(1) { background: rgba(193,18,31,0.6); }
+  .april-day-card:nth-child(2) { background: rgba(27,79,114,0.6); }
+  .april-day-card:nth-child(3) { background: rgba(45,106,79,0.6); }
+  .april-day-card:nth-child(4) { background: rgba(232,93,4,0.6); }
+  .april-day-card:nth-child(5) { background: rgba(106,27,154,0.5); }
+
+  .april-day-icon {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .april-day-name {
+    font-family: 'Noto Serif Malayalam', serif;
+    font-size: 12px;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.4;
+    font-weight: 600;
+  }
+
+  .back-cover-footer {
+    padding: 28px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-org {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,0.25);
+    text-transform: uppercase;
+    line-height: 1.8;
+  }
+
+  .footer-bar {
+    width: 40px;
+    height: 3px;
+    background: var(--deep-red);
+  }
+
+  /* ─── ACCENT ELEMENTS ─── */
+  .red-rule {
+    width: 40px;
+    height: 3px;
+    background: var(--deep-red);
+    margin-bottom: 20px;
+  }
+
+  .section-break {
+    margin: 48px 0;
+    height: 1px;
+    background: var(--border);
+    position: relative;
+  }
+
+  .section-break::after {
+    content: '◆';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--off-white);
+    padding: 0 12px;
+    color: var(--border);
+    font-size: 10px;
+  }
+
+  @media print {
+    body { max-width: 100%; }
+    .cover, .back-cover { min-height: 100vh; }
+    .article-spread { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════ COVER PAGE ═══════════════════════════ -->
+<div class="cover">
+  <div class="cover-noise"></div>
+  <div class="cover-top-stripe"></div>
+
+  <div class="cover-header">
+    <div class="cover-org">
+      Kerala Shastra Sahithya Parishath<br>
+      Yuvasamithi · ന്യൂസ്‌ലെറ്റർ
+    </div>
+    <div class="cover-issue">
+      Vol. 01 · Issue 01<br>
+      March – April 2026
+    </div>
+  </div>
+
+  <div class="cover-divider"></div>
+
+  <div class="cover-hero">
+    <div class="cover-campaign-tag">Equality March · Special Issue</div>
+    <div class="cover-title-ml">സമത്വത്തിന്റെ<br>വഴികൾ</div>
+    <div class="cover-title-en">Equality March — Voices of Youth</div>
+
+    <div class="cover-visual-block">
+      <div class="cover-cell">
+        <span class="cover-cell-num">01</span>
+        <div class="cover-cell-label">ലിംഗനീതിയും<br>മനുഷ്യാവകാശങ്ങളും</div>
+      </div>
+      <div class="cover-cell">
+        <span class="cover-cell-num">02</span>
+        <div class="cover-cell-label">പരിസ്ഥിതിയും<br>നദീ സംരക്ഷണവും</div>
+      </div>
+      <div class="cover-cell">
+        <span class="cover-cell-num">03</span>
+        <div class="cover-cell-label">ആരോഗ്യ ശാസ്ത്ര<br>വാർത്തകൾ</div>
+      </div>
+      <div class="cover-cell">
+        <span class="cover-cell-num">04</span>
+        <div class="cover-cell-label">ശാസ്ത്ര കണ്ടെത്തലുകൾ<br>& യുദ്ധ വിരുദ്ധ ക്യാമ്പയിൻ</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-bottom">
+    <div class="cover-dates">
+      <div class="cover-date-item">
+        <span class="cover-date-label">Campaign Start</span>
+        <span class="cover-date-val">മാർച്ച് 8 — വനിതാ ദിനം</span>
+      </div>
+      <div class="cover-date-item">
+        <span class="cover-date-label">Campaign End</span>
+        <span class="cover-date-val">മാർച്ച് 31 — ട്രാൻസ്ജെൻഡർ ദൃശ്യതാ ദിനം</span>
+      </div>
+    </div>
+    <div class="cover-vol">2026</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ CONTENTS PAGE ═══════════════════════════ -->
+<div class="contents-page">
+  <div class="section-eyebrow">Contents</div>
+  <div class="contents-title">ഈ ലക്കത്തിൽ</div>
+
+  <ul class="toc-list">
+    <li class="toc-item">
+      <span class="toc-num">01</span>
+      <div class="toc-section">
+        <span class="toc-cat">Gender Equality</span>
+        <span class="toc-name">സമത്വത്തിന്റെ രാഷ്ട്രീയം: ആഘോഷങ്ങൾക്കപ്പുറം</span>
+      </div>
+      <span class="toc-tag tag-gender">ലിംഗനീതി</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">02</span>
+      <div class="toc-section">
+        <span class="toc-cat">Gender & Development</span>
+        <span class="toc-name">ലിംഗതുല്യത: സുസ്ഥിര വികസനത്തിലേക്കുള്ള ചുവടുവെപ്പ്</span>
+      </div>
+      <span class="toc-tag tag-gender">SDG-5</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">03</span>
+      <div class="toc-section">
+        <span class="toc-cat">LGBTQIA+ Rights</span>
+        <span class="toc-name">പൊരുതി നേടിയ വിസിബിലിറ്റി</span>
+      </div>
+      <span class="toc-tag tag-campaign">നിയമം</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">04</span>
+      <div class="toc-section">
+        <span class="toc-cat">Environment</span>
+        <span class="toc-name">നദികളെ സംരക്ഷിക്കുക, ജീവനെ നിലനിർത്തുക</span>
+      </div>
+      <span class="toc-tag tag-env">പരിസ്ഥിതി</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">05</span>
+      <div class="toc-section">
+        <span class="toc-cat">Health & Wellness</span>
+        <span class="toc-name">ഉറങ്ങാം നന്നായി, ജീവിക്കാം ആരോഗ്യത്തോടെ</span>
+      </div>
+      <span class="toc-tag tag-health">ആരോഗ്യം</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">06</span>
+      <div class="toc-section">
+        <span class="toc-cat">Science News</span>
+        <span class="toc-name">എഐ — ഗണിതം, ഗ്രഹങ്ങൾ, ജലം, ഭൗതികശാസ്ത്രം</span>
+      </div>
+      <span class="toc-tag tag-science">ശാസ്ത്രം</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">07</span>
+      <div class="toc-section">
+        <span class="toc-cat">Campaign</span>
+        <span class="toc-name">യുദ്ധ വിരുദ്ധ ക്യാമ്പയിൻ — ഒന്നിക്കാം</span>
+      </div>
+      <span class="toc-tag tag-campaign">ക്യാമ്പയിൻ</span>
+    </li>
+    <li class="toc-item">
+      <span class="toc-num">08</span>
+      <div class="toc-section">
+        <span class="toc-cat">April Science Days</span>
+        <span class="toc-name">ഏപ്രിൽ ലോക ദിനങ്ങൾ</span>
+      </div>
+      <span class="toc-tag tag-science">Calendar</span>
+    </li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════ EDITORIAL NOTE ═══════════════════════════ -->
+<div class="editorial-banner">
+  <div class="editorial-label">Editorial Note · മുഖക്കുറിപ്പ്</div>
+  <div class="editorial-text">
+    ശാസ്ത്ര സാഹിത്യ പരിഷത്ത് 63-ആം സംസ്ഥാന സമ്മേളനത്തിന്റെ ആവേശം ഉൾക്കൊണ്ട് യുവസമിതി പുതിയൊരു പ്രവർത്തന വർഷത്തിലേക്ക് ചുവടുവെക്കുകയാണ്. കഴിഞ്ഞ വർഷങ്ങളിൽ ഉയർത്തിപ്പിടിച്ച ആശയങ്ങൾക്ക് തുടർച്ച ഉറപ്പാക്കുന്നതോടൊപ്പം, മാറുന്ന കാലത്തിന് അനുയോജ്യമായ പുതിയ മാതൃകകൾ രൂപപ്പെടുത്തേണ്ടതും ഈ ഘട്ടത്തിൽ അനിവാര്യമാണ്. നീതിയും സമത്വവും പുലരുന്ന ഒരു സമൂഹ നിർമ്മിതിക്കായി ഈ ലക്കം സമർപ്പണം.
+  </div>
+</div>
+
+<!-- ═══════════════════════════ GENDER EQUALITY ARTICLE ═══════════════════════════ -->
+<div class="article-spread">
+  <div class="article-header">
+    <div class="article-category-bar">
+      <div class="article-category-icon cat-gender">♀</div>
+      <span class="article-category-name">Gender Equality · ലിംഗ സമത്വം</span>
+    </div>
+    <div class="article-title">സമത്വത്തിന്റെ രാഷ്ട്രീയം:<br>ആഘോഷങ്ങൾക്കപ്പുറം യുവത ചിന്തിക്കേണ്ടത്</div>
+    <div class="article-subtitle">Dr. A K Jayasree, Internal Medicine Specialist, Govt. Medical College Pariyaram — March 8 Online Talk</div>
+  </div>
+
+  <div class="article-body">
+    <div class="source-tag">▸ Women's Day Celebration Webinar · March 8, 2026</div>
+
+    <p class="drop-cap">ഇന്നത്തെ യുവതലമുറ കലാലയങ്ങളിലും തൊഴിലിടങ്ങളിലും ലിംഗഭേദമില്ലാതെ വളരെ സൗഹൃദപരമായി ഇടപെടുന്നുണ്ട്. 'എടാ, എടി' എന്നൊക്കെയുള്ള വിളികളും തോളിൽ കൈയിട്ടുള്ള നടത്തവും വലിയ മാറ്റമായി കാണാമെങ്കിലും, ഇതിനെ എത്രത്തോളം രാഷ്ട്രീയ കാഴ്ചപ്പാടോടെ ഉൾക്കൊള്ളാൻ നമുക്ക് കഴിയുന്നു എന്നത് പ്രധാനമാണ്.</p>
+
+    <p>പലപ്പോഴും വനിതാ ദിനാഘോഷങ്ങൾ കേവലം ആഘോഷങ്ങളിൽ ഒതുങ്ങിപ്പോകുന്നു. സമരങ്ങളെ ആഘോഷങ്ങളാക്കി മാറ്റിയ ചരിത്രമാണ് നമുക്കുള്ളതെങ്കിൽ, ഇന്നത്തെ ആഘോഷങ്ങൾ ലിംഗനീതിക്കായുള്ള പോരാട്ടവീര്യം ചോർത്തിക്കളയുന്ന 'അരാഷ്ട്രീയ' പ്രവർത്തനങ്ങളായി മാറാതെ നാം ജാഗ്രത പാലിക്കണം.</p>
+
+    <div class="pullquote">
+      <p>"നീതി, അവകാശം, നടപടി — ഈ മുദ്രാവാക്യം നമ്മുടെ ദൈനംദിന ജീവിതത്തിന്റെ ഭാഗമാക്കി മാറ്റാൻ യുവതയ്ക്ക് കഴിയണം"</p>
+    </div>
+
+    <p>സ്ത്രീകൾ വീടുകളിൽ ചെയ്യുന്ന വേതനമില്ലാത്ത അധ്വാനത്തെക്കുറിച്ച് ഗൗരവകരമായ സംവാദങ്ങൾ ഉയരണം. മുതലാളിത്ത വ്യവസ്ഥിതി നിലനിൽക്കുന്നത് തന്നെ സ്ത്രീകളുടെ ഈ കാണാപ്പണിയുടെ മുകളിലാണ്. പ്രസവം, കുഞ്ഞുങ്ങളെ വളർത്തൽ, വീട്ടുജോലികൾ — ഇവ കേവലം സ്ത്രീയുടെ ബാധ്യതയായി കാണുന്ന പൊതുബോധം മാറണം.</p>
+
+    <p>ലിംഗസമത്വം എന്നത് സ്ത്രീകളുടെ മാത്രം വിഷയമല്ല. ഭരണഘടന ഉറപ്പ് നൽകുന്ന 'Rights, Justice and Action' — ഈ മൂന്ന് തത്ത്വങ്ങൾ ജീവിതത്തിൽ പ്രാവർത്തികമാക്കിയാൽ മാത്രമേ യഥാർത്ഥ സമത്വം കൈവരിക്കാൻ സാധിക്കൂ.</p>
+  </div>
+
+  <div class="article-divider"><span class="article-divider-text">continued</span></div>
+
+  <div class="article-header" style="margin-top:40px;">
+    <div class="article-category-bar">
+      <div class="article-category-icon cat-gender">⚖</div>
+      <span class="article-category-name">LGBTQIA+ Rights · നിയമം</span>
+    </div>
+    <div class="article-title">പൊരുതി നേടിയ വിസിബിലിറ്റി — LGBTQIA+ അവകാശ പോരാട്ടങ്ങൾ</div>
+    <div class="article-subtitle">Adv. Maya Krishnan, High Court of Kerala · Lawcon Legal Lecture Series, March 31</div>
+  </div>
+
+  <div class="article-body">
+    <div class="source-tag">▸ LGBTQ Rights & Legal Perspectives Webinar · March 31, 2026</div>
+
+    <p class="drop-cap">ലൈംഗിക ന്യൂനപക്ഷങ്ങളുടെ (LGBTQIA+) ചരിത്രം വലിയ പോരാട്ടങ്ങളുടേതാണ്. 2014-ലെ NALSA വിധിയിലൂടെ ട്രാൻസ്ജെൻഡർ വ്യക്തികളെ 'തേർഡ് ജെൻഡർ' ആയി സുപ്രീം കോടതി അംഗീകരിച്ചത്, 2018-ലെ Navjyot Singh Johar വിധിയിലൂടെ സ്വവർഗ്ഗാനുരാഗം ക്രിമിനൽ കുറ്റമല്ലെന്ന് പ്രഖ്യാപിച്ചത് — ഈ ചരിത്ര നിമിഷങ്ങൾ ആഘോഷിക്കപ്പെടണം.</p>
+
+    <p>എന്നാൽ 2019-ലെ Transgender Persons Protection Act-ലെ ഭേദഗതി നിർദ്ദേശങ്ങൾ ആശങ്ക ഉണർത്തുന്നു. NALSA വിധി ഉറപ്പ് നൽകിയ 'Self-declaration' അവകാശത്തെ അട്ടിമറിക്കുന്ന മെഡിക്കൽ ബോർഡ് നിർബന്ധം — ഇത് സ്വകാര്യതയുടെ ലംഘനമാണ്.</p>
+
+    <p>തുല്യത എന്നത് ആർക്കും 'നൽകുന്ന' ഔദാര്യമല്ല — മറിച്ച്, ഓരോ മനുഷ്യന്റെയും മൗലികാവകാശമാണ്. ഈ പോരാട്ടത്തിൽ ഒരു ജനാധിപത്യ സമൂഹം ഒന്നടങ്കം ഒന്നിക്കണം.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ ENVIRONMENT ARTICLE ═══════════════════════════ -->
+<div class="article-spread">
+  <div class="article-header">
+    <div class="article-category-bar">
+      <div class="article-category-icon cat-env">🌊</div>
+      <span class="article-category-name">Environment · പരിസ്ഥിതി</span>
+    </div>
+    <div class="article-title">നദികളെ സംരക്ഷിക്കുക,<br>ജീവനെ നിലനിർത്തുക</div>
+    <div class="article-subtitle">Abdul Hameed, Former Scientist CWRDM · Yuvasamithi Thiruvananthapuram, March 14</div>
+  </div>
+
+  <div class="article-body">
+    <div class="source-tag">▸ International Day of Action for Rivers · March 14, 2026</div>
+
+    <p class="drop-cap">ഭാവിയിൽ ലോകമഹായുദ്ധങ്ങൾ സംഭവിക്കുകയാണെങ്കിൽ അത് ജലത്തിനുവേണ്ടിയായിരിക്കും — ഈ ഗൗരവകരമായ മുന്നറിയിപ്പോടെ ആരംഭിക്കുന്ന ചർച്ചകൾ കേരളത്തിന്റെ 44 നദികളുടെ ഭാവിയെക്കുറിച്ചുള്ള ഗഹനമായ ചോദ്യങ്ങൾ ഉയർത്തുന്നു.</p>
+
+    <p>ലോക ജലഗുണനിലവാര സൂചികയിൽ 122 രാജ്യങ്ങളിൽ 120-ാം സ്ഥാനത്താണ് ഇന്ത്യ — ഈ ഞെട്ടിക്കുന്ന വസ്തുത നമ്മുടെ ജലസ്രോതസ്സുകളുടെ ശോചനീയാവസ്ഥ തുറന്നുകാട്ടുന്നു.</p>
+
+    <div class="pullquote">
+      <p>"Protect Rivers, Protect People — നദികൾ നശിക്കുമ്പോൾ ആദ്യം ബാധിക്കുന്നത് പാർശ്വവൽക്കരിക്കപ്പെട്ട ജനതയെ ആണ്"</p>
+    </div>
+
+    <p>ജലാശയങ്ങളിലെ Microplastics-ന്റെ ഭീഷണി ഗൗരവകരമാണ്. പുഴകളിൽ മാത്രമല്ല, കിണറുകളിൽ പോലും അംശങ്ങൾ കണ്ടെത്തിയിട്ടുണ്ട്. Watershed-based Master Plans, Fiber root vegetation, Zero Waste Society — ഈ ആശയങ്ങൾ ഓരോ ഗ്രാമ പഞ്ചായത്ത് തലത്തിലും നടപ്പിലാക്കണം.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ HEALTH ARTICLE ═══════════════════════════ -->
+<div class="article-spread">
+  <div class="article-header">
+    <div class="article-category-bar">
+      <div class="article-category-icon cat-health">💤</div>
+      <span class="article-category-name">Health & Wellness · ആരോഗ്യം</span>
+    </div>
+    <div class="article-title">ഉറങ്ങാം നന്നായി,<br>ജീവിക്കാം ആരോഗ്യത്തോടെ</div>
+    <div class="article-subtitle">Dr. Mubarak Sani, Community Medicine, MES Medical College · World Sleep Day, March 13</div>
+  </div>
+
+  <div class="article-body">
+    <div class="source-tag">▸ World Sleep Day · "Sleep Well, Live Better" · 2026 Theme</div>
+
+    <p class="drop-cap">ഭക്ഷണവും വെള്ളവും പോലെ തന്നെ മനുഷ്യശരീരത്തിന്റെ നിലനിൽപ്പിന് ആധാരമാണ് നല്ല ഉറക്കം. ലക്ഷക്കണക്കിന് വർഷത്തെ പരിണാമത്തിലൂടെ രൂപപ്പെട്ട 'Circadian Rhythm' ആണ് നമ്മുടെ ഉറക്കത്തെ നിയന്ത്രിക്കുന്നത്. 'Melatonin' രാത്രി ഉൽപ്പാദിക്കുന്നതിലൂടെ ആണ് ആഴമേറിയ ഉറക്കം ലഭ്യമാകുന്നത്.</p>
+
+    <p>തുടർച്ചയായ ഉറക്കക്കുറവ് — Sleep Deprivation — പ്രമേഹം, ഹൃദ്രോഗം, ശ്രദ്ധക്കുറവ്, വിഷാദം, റോഡപകടങ്ങൾ എന്നിവ ക്ഷണിച്ചുവരുത്തുന്നു. ഉറക്കം ഒരു ദൗർബ്ബല്യമല്ല — ദിനചര്യ ആണ്.</p>
+  </div>
+
+  <div class="tips-box">
+    <div class="tips-title">💡 Sleep Hygiene ടിപ്പുകൾ</div>
+    <ul class="tips-list">
+      <li>ദിവസവും കൃത്യ സമയത്ത് ഉറങ്ങുക — Circadian Rhythm ക്രമപ്പെടും</li>
+      <li>ഉറങ്ങുന്നതിന് 1 മണിക്കൂർ മുമ്പ് സ്ക്രീൻ ഒഴിവാക്കുക — Blue Light Melatonin തടസ്സ​പ്പെടുത്തും</li>
+      <li>കിടപ്പുമുറി ശാന്തവും ഇരുട്ടുള്ളതും ആക്കുക</li>
+      <li>രാത്രി കാപ്പി, ചായ, മദ്യം ഒഴിവാക്കുക</li>
+      <li>പകൽ Power Nap 20 മിനിറ്റിൽ ഒതുക്കുക</li>
+      <li>കിടക്ക ഉറക്കത്തിന് മാത്രം ഉപയോഗിക്കുക</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SCIENCE NEWS ═══════════════════════════ -->
+<div class="article-spread">
+  <div class="article-header">
+    <div class="article-category-bar">
+      <div class="article-category-icon cat-science">🔬</div>
+      <span class="article-category-name">Science News · ശാസ്ത്ര വാർത്തകൾ</span>
+    </div>
+    <div class="article-title">ഈ മാസത്തെ ശ്രദ്ധേയ<br>ശാസ്ത്ര കണ്ടെത്തലുകൾ</div>
+  </div>
+
+  <div class="science-card">
+    <div class="science-card-header">
+      <div class="science-card-title">ഇനി കണക്കും എഐ കൂട്ടും: VUB ഗവേഷകർ പുതിയ ഗണിതശാസ്ത്ര സത്യങ്ങൾ കണ്ടെത്തി</div>
+      <span class="science-card-date">Feb 2026</span>
+    </div>
+    <div class="science-card-body">ChatGPT-5.2 (Thinking) ഉപയോഗിച്ച് ഇതുവരെ തെളിയിക്കപ്പെടാത്ത ഒരു ഗണിതശാസ്ത്ര Conjecture-ന് (Ran-Teng, 2024) തെളിവ് കണ്ടെത്തി. 'Vibe-Proving' എന്ന പുതിയ ഗവേഷണ രീതി — AI-ൽ അന്തർലീനമായ ക്രിയേറ്റിവിറ്റിയുടെ തെളിവ്.</div>
+    <a class="doi-link" href="https://arxiv.org/abs/2602.18918">DOI: 10.48550/arXiv.2602.18918</a>
+  </div>
+
+  <div class="science-card">
+    <div class="science-card-header">
+      <div class="science-card-title">ഭീമൻ ഗ്രഹങ്ങളുടെ പിറവി — WISPIT 2 നക്ഷത്രത്തിന് ചുറ്റും ESO-യുടെ കണ്ടെത്തൽ</div>
+      <span class="science-card-date">Mar 2026</span>
+    </div>
+    <div class="science-card-body">യൂണിവേഴ്സിറ്റി ഓഫ് ഗാൽവേ ഗവേഷകർ WISPIT 2 നക്ഷത്രത്തിന് ചുറ്റും രണ്ട് ഭീമൻ ഗ്രഹങ്ങൾ (WISPIT 2b, 2c) രൂപപ്പെടുന്നതായി കണ്ടെത്തി. Real-time planet formation-ന്റെ ആദ്യ ചിത്രങ്ങൾ ESO VLT Telescope പകർത്തി.</div>
+    <a class="doi-link" href="#">DOI: 10.3847/2041-8213/ae4b3b</a>
+  </div>
+
+  <div class="science-card">
+    <div class="science-card-header">
+      <div class="science-card-title">യന്ത്രങ്ങൾ ഇനി തേയില്ല! Contactless Friction — Konstanz University-യുടെ കണ്ടെത്തൽ</div>
+      <span class="science-card-date">Mar 2026</span>
+    </div>
+    <div class="science-card-body">300 വർഷം പഴക്കമുള്ള Amontons' Law-ന് ഒരു ഞെട്ടൽ — കാന്തിക ശക്തിമാത്രം ഉപയോഗിച്ചും Friction ഉണ്ടാക്കാം! MEMS, Magnetic Bearings, Vibration Control ടെക്‌നോളജിക്ക് വലിയ ഭാവി.</div>
+    <a class="doi-link" href="#">DOI: 10.1038/s41563-026-02538-1</a>
+  </div>
+
+  <div class="science-card">
+    <div class="science-card-header">
+      <div class="science-card-title">മൈക്രോ ​പ്ലാസ്റ്റിക് കണക്കുകളിൽ പിഴവ്? ലാബ് ഗ്ലൗസുകൾ False Positives ഉണ്ടാക്കുന്നു</div>
+      <span class="science-card-date">Mar 2026</span>
+    </div>
+    <div class="science-card-body">Michigan University ഗവേഷകർ കണ്ടെത്തി: Nitrile/Latex ഗ്ലൗസുകളിലെ Stearates, Microplastics ആയി തെറ്റിദ്ധരിക്കപ്പെടുന്നു. 1 ചതുരശ്ര mm-ൽ 2000 വരെ False Positives! Cleanroom Gloves ഉപയോഗിക്കണം.</div>
+    <a class="doi-link" href="#">DOI: 10.1039/D5AY01801C</a>
+  </div>
+
+  <div class="science-card">
+    <div class="science-card-header">
+      <div class="science-card-title">'ബ്ലൂ കാർബൺ' — കാലാവസ്ഥാ പ്രതിരോധത്തിനായി കടലിനടിയൊരു പ്രതിഭ</div>
+      <span class="science-card-date">2026</span>
+    </div>
+    <div class="science-card-body">കണ്ടൽക്കാടുകൾ, കടൽ​പ്പുൽ, ഉപ്പ് ചതുപ്പ് — കരയിലെ വനങ്ങളേക്കാൾ വേഗത്തിൽ CO₂ ആഗിരണം ചെയ്യും. 'Blue Carbon' ആവാസ​വ്യവസ്ഥ  സംരക്ഷിക്കാൻ ജനകീയ പങ്കാളിത്തം അനിവാര്യം.</div>
+    <a class="doi-link" href="#">DOI: 10.1038/s41559-026-03020-6</a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ ANTI-WAR CAMPAIGN ═══════════════════════════ -->
+<div class="antiwar-block">
+  <div class="antiwar-eyebrow">Anti-War Campaign · യുദ്ധ വിരുദ്ധ ക്യാമ്പയിൻ</div>
+  <div class="antiwar-title">ലോകം യുദ്ധ ഭ്രാന്തിൽ<br>നിഴലിക്കുമ്പോൾ —<br>ഒന്നിക്കാം, ഇനി</div>
+  <div class="antiwar-body">
+    <p>ലോകം യുദ്ധ ഭ്രാന്തിൽ നിഴലിക്കുന്ന ഈ കാലഘട്ടത്തിൽ, സമാധാനത്തിന്റെ മാനവികതയ്ക്ക് വേണ്ടിയുള്ള നിലവിളികൾ ഉയർത്തേണ്ടതും ഉയർന്ന് കേൾക്കേണ്ടതും ഈ ഘട്ടത്തിന്റെ അനിവാര്യതയാണ്. സാമ്രാജ്യത്വ മോഹങ്ങളും അധികാര ലോഭങ്ങളും ലക്ഷക്കണക്കിന് ജീവനുകൾ ബലിയർപ്പിക്കുമ്പോൾ, ശാസ്ത്ര ​ബോധ​ത്തിന്‌ 'Say No to War, Spread Peace' എന്ന ​ആഹ്വാനം ഉച്ചത്തിൽ പ്രതിധ്വനിക്കേണ്ടതുണ്ട്.</p>
+    <p>ശാസ്ത്രം ലോകത്തെ ഒന്നിപ്പിക്കാൻ ഉദ്ദേശിച്ചതാണ്, ​ഒരിക്കലും ​നശിപ്പിക്കാൻ അല്ല. ​KSSP യുവ​സമിതി ​സംഘടിപ്പിക്കുന്ന ​'യുദ്ധത്തിനെതിരെ ​ഒ​ന്നിക്കാം' ​ക്യാ​മ്പ​യിൻ ​ജില്ലാ ​തലത്തിൽ ​വ​ർദ്ധിത ​ആ​വേ​ശ​ത്തോ​ടെ ​മുന്നോ​ട്ടു​ ​പോ​കു​ന്നു.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ BACK COVER ═══════════════════════════ -->
+<div class="back-cover">
+  <div class="cover-top-stripe"></div>
+
+  <div class="back-cover-top">
+    <div class="back-cover-circle">
+      <span class="back-cover-initials">KSSP</span>
+    </div>
+    <div class="back-cover-tagline">ശാസ്ത്രം — ജനങ്ങൾ — പ്രകൃതി</div>
+    <div class="back-cover-sub">Kerala Shastra Sahithya Parishath · Yuvasamithi</div>
+  </div>
+
+  <div class="back-cover-april-days">
+    <div class="april-days-title">April Science Days · ഏപ്രിൽ ലോക ദിനങ്ങൾ</div>
+    <div class="april-days-grid">
+      <div class="april-day-card">
+        <div class="april-day-icon">🌍</div>
+        <div class="april-day-name">ലോക ആരോഗ്യ ദിനം</div>
+      </div>
+      <div class="april-day-card">
+        <div class="april-day-icon">🌱</div>
+        <div class="april-day-name">ഭൗമ ദിനം</div>
+      </div>
+      <div class="april-day-card">
+        <div class="april-day-icon">🧬</div>
+        <div class="april-day-name">ലോക ഡി.എൻ.എ. ദിനം</div>
+      </div>
+      <div class="april-day-card">
+        <div class="april-day-icon">🌿</div>
+        <div class="april-day-name">ലോക ഭൂമി ദിനം</div>
+      </div>
+      <div class="april-day-card">
+        <div class="april-day-icon">🧠</div>
+        <div class="april-day-name">ലോക മലേറിയ ദിനം</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-cover-footer">
+    <div class="footer-org">
+      © 2026 KSSP Yuvasamithi<br>
+      March–April Newsletter
+    </div>
+    <div class="footer-bar"></div>
+    <div class="footer-org" style="text-align:right;">
+      Equality March<br>
+      Voices of Youth
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

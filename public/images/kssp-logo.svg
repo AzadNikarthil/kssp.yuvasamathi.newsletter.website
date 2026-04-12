@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="KSSP Yuvasamithi">
+  <circle cx="60" cy="60" r="58" fill="#1C1B1B"/>
+  <circle cx="60" cy="60" r="42" fill="none" stroke="#C1121F" stroke-width="6"/>
+  <text x="60" y="72" text-anchor="middle" font-family="Georgia, 'Noto Serif Malayalam', serif" font-size="38" font-weight="700" fill="#FCF9F8">Y</text>
+</svg>
