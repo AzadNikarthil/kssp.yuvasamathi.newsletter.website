@@ -253,6 +253,7 @@
     height: 56px;
     object-fit: contain;
     flex-shrink: 0;
+    filter: invert(1);
   }
 
   .cover-pub-text {
@@ -1046,15 +1047,18 @@
     text-align: center;
   }
   .editorial-team-names {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6px 24px;
+    text-align: center;
+    line-height: 2;
   }
   .editorial-team-name {
     font-family: 'Noto Sans Malayalam', sans-serif;
     font-size: 12px;
     color: rgba(255,255,255,0.55);
-    line-height: 1.6;
+    display: inline;
+  }
+  .editorial-team-name + .editorial-team-name::before {
+    content: ' · ';
+    color: rgba(255,255,255,0.2);
   }
 
   .back-cover-footer {
@@ -1228,6 +1232,28 @@
     .azad-cartoon-section { padding: 28px 20px 24px; }
     .azad-cartoon-grid { grid-template-columns: 1fr; gap: 12px; }
     .cartoon-section { padding: 28px 20px 24px; }
+
+    /* Science cards */
+    .science-card { margin: 0 16px 24px; padding: 20px 16px; }
+
+    /* April Science Days — back cover */
+    .back-cover-april-days { margin: 0 16px; padding: 24px 0; }
+    .april-days-grid { grid-template-columns: repeat(2, 1fr); gap: 4px; }
+    .april-day-card { padding: 12px 8px; }
+    .april-day-card:nth-child(5) { grid-column: 1 / -1; }
+    .april-day-icon { font-size: 18px; }
+    .april-day-name { font-size: 11px; }
+
+    /* Editorial team */
+    .editorial-team { padding: 24px 20px 16px; }
+
+    /* Back cover logos row */
+    .back-cover-logos-row { gap: 20px; flex-wrap: wrap; justify-content: center; }
+    .back-cover-motto { padding: 24px 20px; }
+
+    /* Editorial image rows */
+    .editorial-imgs-row { padding: 0 16px; }
+    .editorial-img-half { width: calc(50% - 20px); margin: 6px 4px; }
   }
   .antiwar-img {
     width: calc(50% - 12px);
@@ -1340,8 +1366,8 @@
     <a href="/" class="brand">KSSP യുവസമിതി</a>
     <nav class="links" aria-label="Primary">
       <a href="/">ഹോം</a>
-      <a href="/archive">ആർക്കൈവ്</a>
-      <a href="/about">കുറിച്ച്</a>
+      <a href="/archive/">ആർക്കൈവ്</a>
+      <a href="/about/">കുറിച്ച്</a>
       <a href="/pdfs/2026-march.pdf" download>PDF</a>
     </nav>
   </div>
@@ -1384,7 +1410,7 @@
       <div class="cover-cell" style="position:relative;overflow:hidden;">
         <img src="photos/March/wispit 2.jpg" alt="" class="cover-hero-img">
         <span class="cover-cell-num">03</span>
-        <div class="cover-cell-label">ശാസ്ത്ര വാർത്തകൾ<br>&amp; ഗ്രഹ കണ്ടെത്തൽ</div>
+        <div class="cover-cell-label">ശാസ്ത്ര വാർത്തകൾ</div>
       </div>
       <div class="cover-cell" style="position:relative;overflow:hidden;">
         <img src="photos/March/artemics 2 crew.jpg" alt="" class="cover-hero-img">
@@ -1775,7 +1801,7 @@
       <div class="april-day-card"><div class="april-day-icon">🧩</div><div class="april-day-name">ഏ. 2 · ലോക ഓട്ടിസം അവബോധ ദിനം</div></div>
       <div class="april-day-card"><div class="april-day-icon">🌍</div><div class="april-day-name">ഏ. 7 · ലോകാരോഗ്യ ദിനം</div></div>
       <div class="april-day-card"><div class="april-day-icon">💡</div><div class="april-day-name">ഏ. 21 · സർഗ്ഗാത്മകത-നൂതനത്വ ദിനം</div></div>
-      <div class="april-day-card"><div class="april-day-icon">🌱</div><div class="april-day-name">ഏ. 22 · ഭൂമി ദിനം</div></div>
+      <div class="april-day-card"><div class="april-day-icon">🌱</div><div class="april-day-name">ഏ. 22 · ഭൗമ ദിനം</div></div>
       <div class="april-day-card"><div class="april-day-icon">🧬</div><div class="april-day-name">ഏ. 25 · ലോക മലേറിയ ദിനം</div></div>
     </div>
   </div>
@@ -1799,15 +1825,15 @@
   <div class="editorial-team">
     <div class="editorial-team-label">Editorial Team · എഡിറ്റോറിയൽ ടീം</div>
     <div class="editorial-team-names">
-      <div class="editorial-team-name">Azad Nikarthil</div>
-      <div class="editorial-team-name">Dr. Raseena N R</div>
-      <div class="editorial-team-name">Yadhunath V</div>
-      <div class="editorial-team-name">Aswathi R S</div>
-      <div class="editorial-team-name">Abhijith R</div>
-      <div class="editorial-team-name">V K Jay Somanadhan</div>
-      <div class="editorial-team-name">Abhijith K A</div>
-      <div class="editorial-team-name">Abhiram KTK</div>
-      <div class="editorial-team-name">Sreenath</div>
+      <span class="editorial-team-name">Azad Nikarthil</span>
+      <span class="editorial-team-name">Dr. Raseena N R</span>
+      <span class="editorial-team-name">Yadhunath V</span>
+      <span class="editorial-team-name">Aswathi R S</span>
+      <span class="editorial-team-name">Abhijith R</span>
+      <span class="editorial-team-name">V K Jay Somanadhan</span>
+      <span class="editorial-team-name">Abhijith K A</span>
+      <span class="editorial-team-name">Abhiram KTK</span>
+      <span class="editorial-team-name">Sreenath</span>
     </div>
     <div style="font-family:'Space Mono',monospace;font-size:9px;color:rgba(255,255,255,0.25);margin-top:12px;letter-spacing:0.5px;">AI Assistance: Claude (Anthropic)</div>
   </div>
@@ -1819,30 +1845,17 @@
   </div>
 </div>
 
-
 <div class="issue-share-bar">
   <div class="issue-share-bar-inner">
     <span class="label">ഷെയർ ചെയ്യുക · Share</span>
-    <a href="https://wa.me/?text=സമത്വത്തിന്റെ%20വഴികൾ%20—%20KSSP%20Yuvasamithi%20Newsletter%20" target="_blank" rel="noopener">WhatsApp</a>
-    <a href="https://t.me/share/url?url=&text=സമത്വത്തിന്റെ%20വഴികൾ%20—%20KSSP%20Yuvasamithi" target="_blank" rel="noopener">Telegram</a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener">Facebook</a>
-    <button type="button" onclick="navigator.clipboard&amp;&amp;navigator.clipboard.writeText(location.href).then(function(){this.textContent='Copied!'}.bind(this))">Copy link</button>
+    <a href="https://wa.me/?text=സമത്വത്തിന്റെ%20വഴികൾ%20—%20KSSP%20Yuvasamithi%20Newsletter%20https%3A%2F%2Fkssp-yuvasamithi-media.web.app%2Fissues%2F2026-march%2F" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://t.me/share/url?url=https%3A%2F%2Fkssp-yuvasamithi-media.web.app%2Fissues%2F2026-march%2F&text=സമത്വത്തിന്റെ%20വഴികൾ" target="_blank" rel="noopener">Telegram</a>
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fkssp-yuvasamithi-media.web.app%2Fissues%2F2026-march%2F&text=സമത്വത്തിന്റെ%20വഴികൾ%20—%20KSSP%20Yuvasamithi" target="_blank" rel="noopener">Twitter</a>
+    <a href="/pdfs/2026-march.pdf" download>PDF</a>
   </div>
 </div>
 
-<a class="issue-back-link" href="/">← Back to home</a>
-
-<script>
-  (function () {
-    var url = encodeURIComponent(location.href);
-    document.querySelectorAll('.issue-share-bar a').forEach(function (a) {
-      a.href = a.href
-        .replace(/text=([^&]*)/, function (_, t) { return 'text=' + t + '%20' + url; })
-        .replace(/url=(&|$)/, 'url=' + url + '$1')
-        .replace(/u=$/, 'u=' + url);
-    });
-  })();
-</script>
+<a href="/archive/" class="issue-back-link">← എല്ലാ ലക്കങ്ങളും · All issues</a>
 
 </body>
 </html>
