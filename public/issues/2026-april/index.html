@@ -979,10 +979,24 @@
   }
 
   @media print {
-    body { max-width: 100%; }
-    .cover { min-height: 100vh; }
-    .back-cover { min-height: auto; }
-    .article-spread { page-break-inside: avoid; }
+    @page { size: A4; margin: 0; }
+    html, body {
+      max-width: 100%;
+      background: var(--off-white);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    *, *::before, *::after {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .issue-site-nav,
+    .issue-share-bar,
+    .issue-back-link { display: none !important; }
+    .cover { min-height: 100vh; page-break-after: always; break-after: page; }
+    .back-cover { min-height: auto; page-break-before: always; break-before: page; }
+    .article-spread { page-break-inside: avoid; break-inside: avoid; }
+    img { page-break-inside: avoid; break-inside: avoid; }
   }
 
   /* ─── FULL IMAGE STYLES (no cropping) ─── */
