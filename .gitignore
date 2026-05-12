@@ -1,5 +1,7 @@
 node_modules/
-.claude/
+.claude/*
+!.claude/commands/
+.claude/settings.local.json
 .firebase/
 firebase-debug.log*
 *.log
